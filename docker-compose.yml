@@ -10,38 +10,53 @@ services:
     environment:
       - POSTGRES_USER=devops
       - POSTGRES_PASSWORD=password
-      - POSTGRES_DB=wordpress
+      - POSTGRES_DB=project
       - PGDATA=/home/postgresql/data
     ports:
       - 5432:5432
     networks:
-      - wordpress
+      - task
     logging:
       driver: journald
       options:
         tag: "{{.Name}}"
 
-  wordpress:
+  web:
+    build: ./django
+    command: uwsgi --ini /code/uwsgi.ini
+    volumes:
+      - ./django:/code
+      - sock:/sock
+#    ports:
+#      - "8000:8000"
     depends_on:
       - postgres
-    image: wordpress:latest
-    ports:
-      - "8000:80"
-    restart: always
-    environment:
-      WORDPRESS_DB_HOST: postgres:5432
-      WORDPRESS_DB_USER: devops
-      WORDPRESS_DB_PASSWORD: password
-      WORDPRESS_DB_NAME: wordpress
     networks:
-      - wordpress
+      - task
+    logging:
+      driver: journald
+      options:
+        tag: "{{.Name}}"
+
+  nginx:
+    build: ./nginx
+    volumes:
+      - sock:/sock
+      - ./django:/code
+    ports:
+      - 8000:8000
+    networks:
+      - task
+    depends_on:
+      - web
     logging:
       driver: journald
       options:
         tag: "{{.Name}}"
 
 networks:
-  wordpress:
+  task:
 
 volumes:
   postgres_db:
+  sock:
