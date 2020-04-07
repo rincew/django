@@ -1,6 +1,18 @@
 version: '3.3'
 
 services:
+  redis:
+    image: redis:latest
+    restart: always
+    expose:
+      - "6379"
+    networks:
+      - task
+    logging:
+      driver: journald
+      options:
+        tag: "{{.Name}}"
+
   postgres:
     image: postgres:12
     volumes:
@@ -12,8 +24,8 @@ services:
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=project
       - PGDATA=/home/postgresql/data
-    ports:
-      - 5432:5432
+    expose:
+      - "5432"
     networks:
       - task
     logging:
@@ -27,8 +39,8 @@ services:
     volumes:
       - ./django:/code
       - sock:/sock
-#    ports:
-#      - "8000:8000"
+    expose:
+      - "8000"
     depends_on:
       - postgres
     networks:
@@ -44,7 +56,7 @@ services:
       - sock:/sock
       - ./django:/code
     ports:
-      - 8000:8000
+      - 80:8000
     networks:
       - task
     depends_on:
