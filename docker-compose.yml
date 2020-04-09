@@ -4,17 +4,14 @@ services:
   redis:
     image: redis:latest
     restart: always
-#    expose:
-#      - "6379"
-#    networks:
-#      - task
     logging:
       driver: journald
       options:
         tag: "{{.Name}}"
 
   postgres:
-    image: postgres:12
+#    image: postgres:12
+    build: ./postgres
     volumes:
       - postgres_db:/home/postgresql/
       - postgres_db:/var/log/postgresql
@@ -24,10 +21,8 @@ services:
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=project
       - PGDATA=/home/postgresql/data
-#    expose:
-#      - "5432"
-#    networks:
-#      - task
+    ports:
+      - 5432:5432
     logging:
       driver: journald
       options:
@@ -39,12 +34,8 @@ services:
     volumes:
       - ./django:/code
       - sock:/sock
-#    expose:
-#      - "8000"
     depends_on:
       - postgres
-#    networks:
-#      - task
     logging:
       driver: journald
       options:
@@ -57,17 +48,43 @@ services:
       - ./django:/code
     ports:
       - 80:8000
-#    networks:
-#      - task
     depends_on:
       - web
     logging:
       driver: journald
       options:
         tag: "{{.Name}}"
+   
+  sentry:
+    image: sentry
+    env_file:
+      - sentry.env
+    ports:
+      - 9000:9000
+    logging:
+      driver: journald
+      options:
+        tag: "{{.Name}}"
+   
+  sentry-worker-1:
+    image: sentry
+    env_file:
+      - sentry.env
+    command: "sentry run worker"
+    logging:
+      driver: journald
+      options:
+        tag: "{{.Name}}"
 
-#networks:
-#  task:
+  sentry-cron:
+    image: sentry
+    env_file:
+      - sentry.env
+    command: "sentry run cron"
+    logging:
+      driver: journald
+      options:
+        tag: "{{.Name}}"
 
 volumes:
   postgres_db:
