@@ -21,8 +21,6 @@ services:
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=project
       - PGDATA=/home/postgresql/data
-    ports:
-      - 5432:5432
     logging:
       driver: journald
       options:
@@ -86,6 +84,46 @@ services:
       options:
         tag: "{{.Name}}"
 
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - ./prometheus:/etc/prometheus
+    ports: 
+      - 9090:9090
+    logging:
+      driver: journald
+      options:
+        tag: "{{.Name}}"
+
+  node-exporter:
+    image: prom/node-exporter
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+
+  cadvisor:
+    image: google/cadvisor:latest
+#    container_name: cadvisor
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+  
+  grafana:
+    image: grafana/grafana:6.7.2-ubuntu
+    ports: 
+      - 3000:3000
+    volumes:
+      - grafana-storage:/var/lib/grafana
+#      - ./grafana:/etc/grafana
+    logging:
+      driver: journald
+      options:
+        tag: "{{.Name}}"
+
 volumes:
   postgres_db:
   sock:
+  grafana-storage:
