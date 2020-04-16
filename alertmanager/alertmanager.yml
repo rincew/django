@@ -1,0 +1,16 @@
+global:
+  resolve_timeout: 1m
+ 
+route:
+  receiver: gmail
+ 
+receivers:
+- name: gmail
+  email_configs:
+  - to: rincewi@gmail.com
+    from: rincewi@gmail.com
+    smarthost: smtp.gmail.com:587
+    auth_username: rincewi@gmail.com
+    auth_identity: rincewi@gmail.com
+    auth_password: kmxioujhqvogtwhd
+    send_resolved: true

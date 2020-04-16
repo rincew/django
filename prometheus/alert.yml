@@ -1,0 +1,15 @@
+groups:
+- name: Containers
+  rules:
+  - alert: ContainerDown
+   # Condition for alerting
+    expr: absent(container_last_seen{name="project_web_1"})
+    for: 1m
+   # Annotation - additional informational labels to store more information
+    annotations:
+      title: 'Instance {{ $labels.name }} down'
+      description: '{{ $labels.name }} down'
+   # Labels - additional labels to be attached to the alert
+    labels:
+      severity: 'critical'
+

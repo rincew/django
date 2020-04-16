@@ -1,0 +1,839 @@
+2020-04-13 12:38:08,522	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for web, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2020-04-13 12:38:08,523	Job number is not available yet
+2020-04-13 12:38:08,523	Job number is not available yet
+2020-04-13 12:38:08,527	File already exists: /var/loadtest/logs/2020-04-13_12-38-08.467751/answ_FyRYp9.log
+2020-04-13 12:38:08,527	File already exists: /var/loadtest/logs/2020-04-13_12-38-08.467751/phout_jh7ZwC.log
+2020-04-13 12:38:08,527	File already exists: /var/loadtest/logs/2020-04-13_12-38-08.467751/phantom_Ej2jAM.log
+2020-04-13 12:38:08,530	File not found to collect: validation_error.yaml
+2020-04-13 12:38:08,530	File already exists: /var/loadtest/logs/2020-04-13_12-38-08.467751/phantom_stat_NJM3uu.log
+2020-04-13 13:40:14,092	Exception occurred:
+<class 'socket.gaierror'>: [Errno -2] Name or service not known
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 526, in resolve
+    resolved = self.lookup_fn(address_str, port)
+
+2020-04-13 13:40:14,093	Job number is not available yet
+2020-04-13 13:40:14,093	Job number is not available yet
+2020-04-13 13:40:14,106	File already exists: /var/loadtest/logs/2020-04-13_13-40-14.007873/phout_hUg4pa.log
+2020-04-13 13:40:14,107	File already exists: /var/loadtest/logs/2020-04-13_13-40-14.007873/phantom_LhtbnZ.log
+2020-04-13 13:40:14,107	File already exists: /var/loadtest/logs/2020-04-13_13-40-14.007873/answ_Oj4zoD.log
+2020-04-13 13:40:14,108	File not found to collect: validation_error.yaml
+2020-04-13 13:40:14,108	File already exists: /var/loadtest/logs/2020-04-13_13-40-14.007873/phantom_stat_VAJRlU.log
+2020-04-13 13:41:50,378	Failed to install monitoring agent to 130.193.44.72
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-13 13:52:00,422	Interrupting
+2020-04-13 13:52:02,537	Job number is not available yet
+2020-04-13 13:52:02,537	Job number is not available yet
+2020-04-13 13:52:02,540	File already exists: /var/loadtest/logs/2020-04-13_13-41-49.755638/phantom_mo2uEb.log
+2020-04-13 13:52:02,541	File already exists: /var/loadtest/logs/2020-04-13_13-41-49.755638/phantom_stdout_stderr_dmtaEf.log
+2020-04-13 13:52:02,541	File already exists: /var/loadtest/logs/2020-04-13_13-41-49.755638/phantom_YX98dJ.conf
+2020-04-13 13:52:02,541	File already exists: /var/loadtest/logs/2020-04-13_13-41-49.755638/phout_s5S_AJ.log
+2020-04-13 13:52:02,541	File already exists: /var/loadtest/logs/2020-04-13_13-41-49.755638/phantom_stat_q42wHN.log
+2020-04-13 13:52:02,542	File not found to collect: validation_error.yaml
+2020-04-13 13:52:02,542	File already exists: /var/loadtest/logs/2020-04-13_13-41-49.755638/answ_SsKGVy.log
+2020-04-13 13:52:02,542	File already exists: /var/loadtest/logs/2020-04-13_13-41-49.755638/monitoring_CZsnOp.xml
+2020-04-13 14:39:49,697	Failed to install monitoring agent to 130.193.44.72
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-13 14:50:07,547	Job number is not available yet
+2020-04-13 14:50:07,547	Job number is not available yet
+2020-04-13 14:50:07,549	File already exists: /var/loadtest/logs/2020-04-13_14-39-49.105297/phantom_SA6kTo.log
+2020-04-13 14:50:07,549	File already exists: /var/loadtest/logs/2020-04-13_14-39-49.105297/phantom_5QkZVn.conf
+2020-04-13 14:50:07,549	File already exists: /var/loadtest/logs/2020-04-13_14-39-49.105297/monitoring_dWfsNM.xml
+2020-04-13 14:50:07,549	File already exists: /var/loadtest/logs/2020-04-13_14-39-49.105297/phantom_stat_XVeTuF.log
+2020-04-13 14:50:07,549	File not found to collect: validation_error.yaml
+2020-04-13 14:50:07,550	File already exists: /var/loadtest/logs/2020-04-13_14-39-49.105297/answ_w6bCpf.log
+2020-04-13 14:50:07,550	File already exists: /var/loadtest/logs/2020-04-13_14-39-49.105297/phout_0yZIVg.log
+2020-04-13 14:50:07,550	File already exists: /var/loadtest/logs/2020-04-13_14-39-49.105297/phantom_stdout_stderr_tjg9pt.log
+2020-04-13 15:49:28,335	Failed to install monitoring agent to 130.193.44.72
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-13 15:59:46,382	Job number is not available yet
+2020-04-13 15:59:46,382	Job number is not available yet
+2020-04-13 15:59:46,384	File already exists: /var/loadtest/logs/2020-04-13_15-49-27.807428/phout_XDS06K.log
+2020-04-13 15:59:46,384	File already exists: /var/loadtest/logs/2020-04-13_15-49-27.807428/answ_nd696D.log
+2020-04-13 15:59:46,384	File already exists: /var/loadtest/logs/2020-04-13_15-49-27.807428/phantom_CJVl5h.log
+2020-04-13 15:59:46,384	File already exists: /var/loadtest/logs/2020-04-13_15-49-27.807428/phantom_stdout_stderr_LUFnVs.log
+2020-04-13 15:59:46,385	File already exists: /var/loadtest/logs/2020-04-13_15-49-27.807428/phantom_shh1zj.conf
+2020-04-13 15:59:46,385	File not found to collect: validation_error.yaml
+2020-04-13 15:59:46,385	File already exists: /var/loadtest/logs/2020-04-13_15-49-27.807428/phantom_stat_ovO0XM.log
+2020-04-13 15:59:46,385	File already exists: /var/loadtest/logs/2020-04-13_15-49-27.807428/monitoring_Ngknap.xml
+2020-04-15 08:51:53,449	Interrupting
+2020-04-15 08:52:02,190	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for 130.193.44.72, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2020-04-15 08:52:02,191	Job number is not available yet
+2020-04-15 08:52:02,191	Job number is not available yet
+2020-04-15 08:52:02,193	File already exists: /var/loadtest/logs/2020-04-15_08-51-47.092620/phout_JQMvPw.log
+2020-04-15 08:52:02,193	File already exists: /var/loadtest/logs/2020-04-15_08-51-47.092620/phantom_stat_GDyEDM.log
+2020-04-15 08:52:02,193	File not found to collect: validation_error.yaml
+2020-04-15 08:52:02,194	File already exists: /var/loadtest/logs/2020-04-15_08-51-47.092620/answ_9kDXN_.log
+2020-04-15 08:52:02,194	File already exists: /var/loadtest/logs/2020-04-15_08-51-47.092620/phantom_qSqoHU.log
+2020-04-15 09:23:33,033	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for 130.193.44.72, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2020-04-15 09:23:33,034	Job number is not available yet
+2020-04-15 09:23:33,034	Job number is not available yet
+2020-04-15 09:23:33,036	File already exists: /var/loadtest/logs/2020-04-15_09-23-17.980942/phout_edTaHg.log
+2020-04-15 09:23:33,036	File already exists: /var/loadtest/logs/2020-04-15_09-23-17.980942/phantom_stat_TDD13g.log
+2020-04-15 09:23:33,036	File not found to collect: validation_error.yaml
+2020-04-15 09:23:33,037	File already exists: /var/loadtest/logs/2020-04-15_09-23-17.980942/answ_eTIubw.log
+2020-04-15 09:23:33,037	File already exists: /var/loadtest/logs/2020-04-15_09-23-17.980942/phantom_PocZ8N.log
+2020-04-15 09:26:25,277	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 09:27:17,831	Interrupting
+2020-04-15 09:27:19,976	Job number is not available yet
+2020-04-15 09:27:19,976	Job number is not available yet
+2020-04-15 09:27:19,977	File already exists: /var/loadtest/logs/2020-04-15_09-26-23.814550/phantom_stdout_stderr_MpFnVC.log
+2020-04-15 09:27:19,977	File already exists: /var/loadtest/logs/2020-04-15_09-26-23.814550/phout_4yyiSg.log
+2020-04-15 09:27:19,978	File already exists: /var/loadtest/logs/2020-04-15_09-26-23.814550/answ_4uWVCI.log
+2020-04-15 09:27:19,978	File already exists: /var/loadtest/logs/2020-04-15_09-26-23.814550/monitoring_UrL1Ja.xml
+2020-04-15 09:27:19,978	File already exists: /var/loadtest/logs/2020-04-15_09-26-23.814550/phantom_V_BgII.conf
+2020-04-15 09:27:19,978	File already exists: /var/loadtest/logs/2020-04-15_09-26-23.814550/phantom_stat_xXn1yA.log
+2020-04-15 09:27:19,978	File already exists: /var/loadtest/logs/2020-04-15_09-26-23.814550/phantom_RGyI3u.log
+2020-04-15 09:27:19,978	File not found to collect: validation_error.yaml
+2020-04-15 09:27:41,786	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 09:36:57,843	Interrupting
+2020-04-15 09:36:59,188	Job number is not available yet
+2020-04-15 09:36:59,188	Job number is not available yet
+2020-04-15 09:36:59,189	File already exists: /var/loadtest/logs/2020-04-15_09-27-41.284854/phantom_nMofP5.conf
+2020-04-15 09:36:59,190	File already exists: /var/loadtest/logs/2020-04-15_09-27-41.284854/monitoring_dJ1doO.xml
+2020-04-15 09:36:59,190	File already exists: /var/loadtest/logs/2020-04-15_09-27-41.284854/answ_PeDMcA.log
+2020-04-15 09:36:59,190	File already exists: /var/loadtest/logs/2020-04-15_09-27-41.284854/phantom_stdout_stderr_pi5IXz.log
+2020-04-15 09:36:59,190	File not found to collect: validation_error.yaml
+2020-04-15 09:36:59,190	File already exists: /var/loadtest/logs/2020-04-15_09-27-41.284854/phantom_TfnhN6.log
+2020-04-15 09:36:59,190	File already exists: /var/loadtest/logs/2020-04-15_09-27-41.284854/phout_YTovqY.log
+2020-04-15 09:36:59,191	File already exists: /var/loadtest/logs/2020-04-15_09-27-41.284854/phantom_stat_RG0hPr.log
+2020-04-15 09:38:31,961	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for 84.201.150.123, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2020-04-15 09:38:31,962	Job number is not available yet
+2020-04-15 09:38:31,962	Job number is not available yet
+2020-04-15 09:38:31,964	File already exists: /var/loadtest/logs/2020-04-15_09-38-31.873821/phout_3DT_c2.log
+2020-04-15 09:38:31,964	File already exists: /var/loadtest/logs/2020-04-15_09-38-31.873821/answ_BWKfdM.log
+2020-04-15 09:38:31,964	File not found to collect: validation_error.yaml
+2020-04-15 09:38:31,964	File already exists: /var/loadtest/logs/2020-04-15_09-38-31.873821/phantom_rvzBYK.log
+2020-04-15 09:38:31,964	File already exists: /var/loadtest/logs/2020-04-15_09-38-31.873821/phantom_stat_WjfzrZ.log
+2020-04-15 09:40:00,063	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 09:43:02,501	Interrupting
+2020-04-15 09:43:04,278	Job number is not available yet
+2020-04-15 09:43:04,278	Job number is not available yet
+2020-04-15 09:43:04,279	File already exists: /var/loadtest/logs/2020-04-15_09-39-59.562599/phout_v63EAi.log
+2020-04-15 09:43:04,279	File already exists: /var/loadtest/logs/2020-04-15_09-39-59.562599/phantom_stdout_stderr_DdKqxG.log
+2020-04-15 09:43:04,279	File already exists: /var/loadtest/logs/2020-04-15_09-39-59.562599/phantom_G0tq2y.conf
+2020-04-15 09:43:04,279	File already exists: /var/loadtest/logs/2020-04-15_09-39-59.562599/phantom_RECwgU.log
+2020-04-15 09:43:04,279	File not found to collect: validation_error.yaml
+2020-04-15 09:43:04,279	File already exists: /var/loadtest/logs/2020-04-15_09-39-59.562599/monitoring_zgZwA8.xml
+2020-04-15 09:43:04,279	File already exists: /var/loadtest/logs/2020-04-15_09-39-59.562599/answ_GjwxXG.log
+2020-04-15 09:43:04,279	File already exists: /var/loadtest/logs/2020-04-15_09-39-59.562599/phantom_stat_QIq6rM.log
+2020-04-15 10:23:59,025	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 10:54:21,179	Job number is not available yet
+2020-04-15 10:54:21,179	Job number is not available yet
+2020-04-15 10:54:21,181	File already exists: /var/loadtest/logs/2020-04-15_10-23-58.589806/phout_eh6uMW.log
+2020-04-15 10:54:21,181	File already exists: /var/loadtest/logs/2020-04-15_10-23-58.589806/monitoring_FpAm8l.xml
+2020-04-15 10:54:21,181	File already exists: /var/loadtest/logs/2020-04-15_10-23-58.589806/answ_5yluJP.log
+2020-04-15 10:54:21,181	File already exists: /var/loadtest/logs/2020-04-15_10-23-58.589806/phantom_GinjbO.log
+2020-04-15 10:54:21,182	File already exists: /var/loadtest/logs/2020-04-15_10-23-58.589806/phantom_stat_7nsGte.log
+2020-04-15 10:54:21,182	File already exists: /var/loadtest/logs/2020-04-15_10-23-58.589806/phantom_7pUki6.conf
+2020-04-15 10:54:21,182	File not found to collect: validation_error.yaml
+2020-04-15 10:54:21,182	File already exists: /var/loadtest/logs/2020-04-15_10-23-58.589806/phantom_stdout_stderr_AFCeoZ.log
+2020-04-15 11:41:59,851	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 11:46:21,824	Interrupting
+2020-04-15 11:46:23,720	Job number is not available yet
+2020-04-15 11:46:23,720	Job number is not available yet
+2020-04-15 11:46:23,722	File already exists: /var/loadtest/logs/2020-04-15_11-41-58.076355/monitoring_L0DN9q.xml
+2020-04-15 11:46:23,722	File already exists: /var/loadtest/logs/2020-04-15_11-41-58.076355/phantom_dsrUUy.log
+2020-04-15 11:46:23,722	File already exists: /var/loadtest/logs/2020-04-15_11-41-58.076355/answ_Q1iPtP.log
+2020-04-15 11:46:23,722	File not found to collect: validation_error.yaml
+2020-04-15 11:46:23,722	File already exists: /var/loadtest/logs/2020-04-15_11-41-58.076355/phantom_stat_fX86gl.log
+2020-04-15 11:46:23,723	File already exists: /var/loadtest/logs/2020-04-15_11-41-58.076355/phout_QUAiat.log
+2020-04-15 11:46:23,723	File already exists: /var/loadtest/logs/2020-04-15_11-41-58.076355/phantom_stdout_stderr__F9HQF.log
+2020-04-15 11:46:23,723	File already exists: /var/loadtest/logs/2020-04-15_11-41-58.076355/phantom_sDwmMn.conf
+2020-04-15 11:48:33,509	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 11:52:41,011	Interrupting
+2020-04-15 11:52:43,390	Job number is not available yet
+2020-04-15 11:52:43,390	Job number is not available yet
+2020-04-15 11:52:43,391	File already exists: /var/loadtest/logs/2020-04-15_11-48-33.062815/answ_EiRF2I.log
+2020-04-15 11:52:43,391	File already exists: /var/loadtest/logs/2020-04-15_11-48-33.062815/phantom_rmdnCg.conf
+2020-04-15 11:52:43,391	File already exists: /var/loadtest/logs/2020-04-15_11-48-33.062815/phout__CKan3.log
+2020-04-15 11:52:43,391	File already exists: /var/loadtest/logs/2020-04-15_11-48-33.062815/phantom_stdout_stderr_zmzERY.log
+2020-04-15 11:52:43,392	File already exists: /var/loadtest/logs/2020-04-15_11-48-33.062815/phantom_J0OE58.log
+2020-04-15 11:52:43,392	File already exists: /var/loadtest/logs/2020-04-15_11-48-33.062815/monitoring_glJMux.xml
+2020-04-15 11:52:43,392	File not found to collect: validation_error.yaml
+2020-04-15 11:52:43,392	File already exists: /var/loadtest/logs/2020-04-15_11-48-33.062815/phantom_stat_cn3CkL.log
+2020-04-15 11:54:20,382	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 12:54:42,091	Job number is not available yet
+2020-04-15 12:54:42,091	Job number is not available yet
+2020-04-15 12:54:42,093	File already exists: /var/loadtest/logs/2020-04-15_11-54-19.878444/phantom_tvtXha.log
+2020-04-15 12:54:42,093	File already exists: /var/loadtest/logs/2020-04-15_11-54-19.878444/phantom_cPSK2e.conf
+2020-04-15 12:54:42,094	File already exists: /var/loadtest/logs/2020-04-15_11-54-19.878444/phantom_stdout_stderr_Atz_1X.log
+2020-04-15 12:54:42,094	File already exists: /var/loadtest/logs/2020-04-15_11-54-19.878444/phout_6UrtyO.log
+2020-04-15 12:54:42,094	File already exists: /var/loadtest/logs/2020-04-15_11-54-19.878444/answ_VAunyo.log
+2020-04-15 12:54:42,094	File already exists: /var/loadtest/logs/2020-04-15_11-54-19.878444/monitoring_r0hCN8.xml
+2020-04-15 12:54:42,103	File not found to collect: validation_error.yaml
+2020-04-15 12:54:42,103	File already exists: /var/loadtest/logs/2020-04-15_11-54-19.878444/phantom_stat_AoI85z.log
+2020-04-15 17:08:35,409	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 17:11:16,001	Interrupting
+2020-04-15 17:11:18,178	Job number is not available yet
+2020-04-15 17:11:18,178	Job number is not available yet
+2020-04-15 17:11:18,179	File already exists: /var/loadtest/logs/2020-04-15_17-08-34.491153/phantom_qM6SS5.log
+2020-04-15 17:11:18,179	File already exists: /var/loadtest/logs/2020-04-15_17-08-34.491153/phantom_stdout_stderr_YUzgxz.log
+2020-04-15 17:11:18,179	File already exists: /var/loadtest/logs/2020-04-15_17-08-34.491153/phout_NpjlCc.log
+2020-04-15 17:11:18,179	File already exists: /var/loadtest/logs/2020-04-15_17-08-34.491153/phantom_BN26l7.conf
+2020-04-15 17:11:18,179	File already exists: /var/loadtest/logs/2020-04-15_17-08-34.491153/monitoring_XzLDp6.xml
+2020-04-15 17:11:18,179	File already exists: /var/loadtest/logs/2020-04-15_17-08-34.491153/phantom_stat_zuKEvJ.log
+2020-04-15 17:11:18,179	File not found to collect: validation_error.yaml
+2020-04-15 17:11:18,179	File already exists: /var/loadtest/logs/2020-04-15_17-08-34.491153/answ_WrhPmN.log
+2020-04-15 17:33:57,907	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 17:39:23,099	Interrupting
+2020-04-15 17:39:24,653	Job number is not available yet
+2020-04-15 17:39:24,653	Job number is not available yet
+2020-04-15 17:39:24,654	File already exists: /var/loadtest/logs/2020-04-15_17-33-57.493195/answ_NspAIc.log
+2020-04-15 17:39:24,654	File already exists: /var/loadtest/logs/2020-04-15_17-33-57.493195/phantom_stat_4hjdGM.log
+2020-04-15 17:39:24,654	File already exists: /var/loadtest/logs/2020-04-15_17-33-57.493195/phantom_zR6zpk.conf
+2020-04-15 17:39:24,654	File already exists: /var/loadtest/logs/2020-04-15_17-33-57.493195/phantom__0PyXW.log
+2020-04-15 17:39:24,655	File already exists: /var/loadtest/logs/2020-04-15_17-33-57.493195/phout_fyn4r5.log
+2020-04-15 17:39:24,655	File already exists: /var/loadtest/logs/2020-04-15_17-33-57.493195/monitoring_8HDgAA.xml
+2020-04-15 17:39:24,655	File already exists: /var/loadtest/logs/2020-04-15_17-33-57.493195/phantom_stdout_stderr_LgKJdk.log
+2020-04-15 17:39:24,655	File not found to collect: validation_error.yaml
+2020-04-15 17:56:23,523	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 18:22:17,886	Interrupting
+2020-04-15 18:22:19,806	Job number is not available yet
+2020-04-15 18:22:19,806	Job number is not available yet
+2020-04-15 18:22:19,807	File already exists: /var/loadtest/logs/2020-04-15_17-56-23.173297/phantom_stat_zyIKIm.log
+2020-04-15 18:22:19,807	File already exists: /var/loadtest/logs/2020-04-15_17-56-23.173297/monitoring_SIpC3g.xml
+2020-04-15 18:22:19,807	File already exists: /var/loadtest/logs/2020-04-15_17-56-23.173297/phantom_stdout_stderr_yffsgN.log
+2020-04-15 18:22:19,807	File already exists: /var/loadtest/logs/2020-04-15_17-56-23.173297/phantom_6WevZU.log
+2020-04-15 18:22:19,808	File not found to collect: validation_error.yaml
+2020-04-15 18:22:19,808	File already exists: /var/loadtest/logs/2020-04-15_17-56-23.173297/answ_RzPfS_.log
+2020-04-15 18:22:19,808	File already exists: /var/loadtest/logs/2020-04-15_17-56-23.173297/phout_f2j5c0.log
+2020-04-15 18:22:19,808	File already exists: /var/loadtest/logs/2020-04-15_17-56-23.173297/phantom_9rfCfg.conf
+2020-04-15 18:23:25,430	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 18:24:04,205	Interrupting
+2020-04-15 18:24:06,081	Job number is not available yet
+2020-04-15 18:24:06,081	Job number is not available yet
+2020-04-15 18:24:06,082	File already exists: /var/loadtest/logs/2020-04-15_18-23-24.978208/phantom_stat_CenDvA.log
+2020-04-15 18:24:06,082	File already exists: /var/loadtest/logs/2020-04-15_18-23-24.978208/phantom_1LIumx.conf
+2020-04-15 18:24:06,082	File already exists: /var/loadtest/logs/2020-04-15_18-23-24.978208/phantom_q6Le8W.log
+2020-04-15 18:24:06,082	File not found to collect: validation_error.yaml
+2020-04-15 18:24:06,082	File already exists: /var/loadtest/logs/2020-04-15_18-23-24.978208/answ_P9i1v7.log
+2020-04-15 18:24:06,083	File already exists: /var/loadtest/logs/2020-04-15_18-23-24.978208/phantom_stdout_stderr_WgjFDg.log
+2020-04-15 18:24:06,083	File already exists: /var/loadtest/logs/2020-04-15_18-23-24.978208/monitoring_43RHQW.xml
+2020-04-15 18:24:06,083	File already exists: /var/loadtest/logs/2020-04-15_18-23-24.978208/phout_lR2WPm.log
+2020-04-15 18:33:49,735	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 19:20:36,620	Interrupting
+2020-04-15 19:20:38,612	Job number is not available yet
+2020-04-15 19:20:38,612	Job number is not available yet
+2020-04-15 19:20:38,613	File already exists: /var/loadtest/logs/2020-04-15_18-33-48.155653/monitoring_jYVXRt.xml
+2020-04-15 19:20:38,613	File already exists: /var/loadtest/logs/2020-04-15_18-33-48.155653/answ_yoRL_G.log
+2020-04-15 19:20:38,614	File already exists: /var/loadtest/logs/2020-04-15_18-33-48.155653/phantom_XDeVDM.log
+2020-04-15 19:20:38,614	File not found to collect: validation_error.yaml
+2020-04-15 19:20:38,614	File already exists: /var/loadtest/logs/2020-04-15_18-33-48.155653/phantom_52WHwM.conf
+2020-04-15 19:20:38,614	File already exists: /var/loadtest/logs/2020-04-15_18-33-48.155653/phout_5zNY5y.log
+2020-04-15 19:20:38,614	File already exists: /var/loadtest/logs/2020-04-15_18-33-48.155653/phantom_stdout_stderr_aaMyAY.log
+2020-04-15 19:20:38,614	File already exists: /var/loadtest/logs/2020-04-15_18-33-48.155653/phantom_stat_YGR9wg.log
+2020-04-15 19:20:47,764	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 19:48:14,676	Interrupting
+2020-04-15 19:48:16,632	Job number is not available yet
+2020-04-15 19:48:16,632	Job number is not available yet
+2020-04-15 19:48:16,633	File already exists: /var/loadtest/logs/2020-04-15_19-20-42.831633/monitoring_UYGb9U.xml
+2020-04-15 19:48:16,633	File already exists: /var/loadtest/logs/2020-04-15_19-20-42.831633/phantom__IGXUC.log
+2020-04-15 19:48:16,633	File already exists: /var/loadtest/logs/2020-04-15_19-20-42.831633/phout_9nXfQV.log
+2020-04-15 19:48:16,633	File already exists: /var/loadtest/logs/2020-04-15_19-20-42.831633/answ_UxW1WL.log
+2020-04-15 19:48:16,634	File already exists: /var/loadtest/logs/2020-04-15_19-20-42.831633/phantom_16gqCH.conf
+2020-04-15 19:48:16,634	File already exists: /var/loadtest/logs/2020-04-15_19-20-42.831633/phantom_stat_IVZTU2.log
+2020-04-15 19:48:16,634	File not found to collect: validation_error.yaml
+2020-04-15 19:48:16,634	File already exists: /var/loadtest/logs/2020-04-15_19-20-42.831633/phantom_stdout_stderr_eGI0Je.log
+2020-04-15 19:49:06,329	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 19:55:47,523	Interrupting
+2020-04-15 19:55:49,296	Job number is not available yet
+2020-04-15 19:55:49,296	Job number is not available yet
+2020-04-15 19:55:49,297	File already exists: /var/loadtest/logs/2020-04-15_19-48-20.956803/phantom_stat_n0M4Pd.log
+2020-04-15 19:55:49,297	File already exists: /var/loadtest/logs/2020-04-15_19-48-20.956803/monitoring_4M0Yn_.xml
+2020-04-15 19:55:49,298	File already exists: /var/loadtest/logs/2020-04-15_19-48-20.956803/phantom_T2KsDT.conf
+2020-04-15 19:55:49,298	File already exists: /var/loadtest/logs/2020-04-15_19-48-20.956803/phantom_cmDjZt.log
+2020-04-15 19:55:49,298	File already exists: /var/loadtest/logs/2020-04-15_19-48-20.956803/answ_3v1Bmy.log
+2020-04-15 19:55:49,298	File already exists: /var/loadtest/logs/2020-04-15_19-48-20.956803/phantom_stdout_stderr_QcLwYC.log
+2020-04-15 19:55:49,298	File not found to collect: validation_error.yaml
+2020-04-15 19:55:49,298	File already exists: /var/loadtest/logs/2020-04-15_19-48-20.956803/phout_KTGUo2.log
+2020-04-15 19:56:48,032	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for 84.201.150.123, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2020-04-15 19:56:48,033	Job number is not available yet
+2020-04-15 19:56:48,033	Job number is not available yet
+2020-04-15 19:56:48,036	File already exists: /var/loadtest/logs/2020-04-15_19-56-46.692216/phantom_stat_rslh1w.log
+2020-04-15 19:56:48,036	File already exists: /var/loadtest/logs/2020-04-15_19-56-46.692216/answ_dieFLT.log
+2020-04-15 19:56:48,036	File already exists: /var/loadtest/logs/2020-04-15_19-56-46.692216/phantom_dlW1tP.log
+2020-04-15 19:56:48,037	File not found to collect: validation_error.yaml
+2020-04-15 19:56:48,037	File already exists: /var/loadtest/logs/2020-04-15_19-56-46.692216/phout_a6o8De.log
+2020-04-15 20:02:42,823	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 20:02:46,687	Interrupting
+2020-04-15 20:14:53,133	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 20:14:56,845	Interrupting
+2020-04-15 20:30:26,597	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-15 21:24:04,339	Interrupting
+2020-04-15 21:24:05,640	Job number is not available yet
+2020-04-15 21:24:05,640	Job number is not available yet
+2020-04-15 21:24:05,641	File already exists: /var/loadtest/logs/2020-04-15_20-29-42.168863/phantom_B6Ff72.log
+2020-04-15 21:24:05,642	File already exists: /var/loadtest/logs/2020-04-15_20-29-42.168863/phantom_stdout_stderr_YFNSRM.log
+2020-04-15 21:24:05,642	File already exists: /var/loadtest/logs/2020-04-15_20-29-42.168863/phantom_stat_gIKPdZ.log
+2020-04-15 21:24:05,642	File already exists: /var/loadtest/logs/2020-04-15_20-29-42.168863/phantom_aBGoOB.conf
+2020-04-15 21:24:05,642	File already exists: /var/loadtest/logs/2020-04-15_20-29-42.168863/answ_qf_9U0.log
+2020-04-15 21:24:05,642	File already exists: /var/loadtest/logs/2020-04-15_20-29-42.168863/phout_asSnCW.log
+2020-04-15 21:24:05,666	File not found to collect: validation_error.yaml
+2020-04-15 21:24:05,666	File already exists: /var/loadtest/logs/2020-04-15_20-29-42.168863/monitoring_dyPWjV.xml
+2020-04-16 09:19:32,644	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-16 09:45:21,068	Interrupting
+2020-04-16 09:45:23,320	Job number is not available yet
+2020-04-16 09:45:23,320	Job number is not available yet
+2020-04-16 09:45:23,321	File already exists: /var/loadtest/logs/2020-04-16_09-18-04.557936/phantom_5utHcr.log
+2020-04-16 09:45:23,321	File already exists: /var/loadtest/logs/2020-04-16_09-18-04.557936/phantom_stat_WyJKuB.log
+2020-04-16 09:45:23,321	File already exists: /var/loadtest/logs/2020-04-16_09-18-04.557936/answ_WTgmhU.log
+2020-04-16 09:45:23,322	File already exists: /var/loadtest/logs/2020-04-16_09-18-04.557936/phantom_TpNEQz.conf
+2020-04-16 09:45:23,322	File not found to collect: validation_error.yaml
+2020-04-16 09:45:23,322	File already exists: /var/loadtest/logs/2020-04-16_09-18-04.557936/phantom_stdout_stderr_Q_kUP0.log
+2020-04-16 09:45:23,322	File already exists: /var/loadtest/logs/2020-04-16_09-18-04.557936/monitoring_eOOL5U.xml
+2020-04-16 09:45:23,322	File already exists: /var/loadtest/logs/2020-04-16_09-18-04.557936/phout_xLBD3c.log
+2020-04-16 12:01:36,574	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-16 12:01:42,781	Interrupting
+2020-04-16 12:01:51,624	Job number is not available yet
+2020-04-16 12:01:51,624	Job number is not available yet
+2020-04-16 12:01:51,625	File already exists: /var/loadtest/logs/2020-04-16_12-01-35.952026/phantom_7AUa03.conf
+2020-04-16 12:01:51,625	File already exists: /var/loadtest/logs/2020-04-16_12-01-35.952026/answ_xqrwgV.log
+2020-04-16 12:01:51,626	File already exists: /var/loadtest/logs/2020-04-16_12-01-35.952026/monitoring_6pET1o.xml
+2020-04-16 12:01:51,626	File already exists: /var/loadtest/logs/2020-04-16_12-01-35.952026/phantom_CFZkHt.log
+2020-04-16 12:01:51,626	File not found to collect: validation_error.yaml
+2020-04-16 12:01:51,626	File already exists: /var/loadtest/logs/2020-04-16_12-01-35.952026/phout_mpzTSC.log
+2020-04-16 12:01:51,626	File already exists: /var/loadtest/logs/2020-04-16_12-01-35.952026/phantom_stat_32hxJD.log
+2020-04-16 12:06:07,213	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for 84.201.150.123, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2020-04-16 12:06:07,214	Job number is not available yet
+2020-04-16 12:06:07,214	Job number is not available yet
+2020-04-16 12:06:07,216	File already exists: /var/loadtest/logs/2020-04-16_12-06-07.106888/answ_b9mXor.log
+2020-04-16 12:06:07,216	File not found to collect: validation_error.yaml
+2020-04-16 12:06:07,216	File already exists: /var/loadtest/logs/2020-04-16_12-06-07.106888/phantom_stat_p8eHWH.log
+2020-04-16 12:06:07,217	File already exists: /var/loadtest/logs/2020-04-16_12-06-07.106888/phout_gDYUdj.log
+2020-04-16 12:06:07,217	File already exists: /var/loadtest/logs/2020-04-16_12-06-07.106888/phantom_VK_gWx.log
+2020-04-16 12:13:26,268	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for 84.201.150.123, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2020-04-16 12:13:26,283	Job number is not available yet
+2020-04-16 12:13:26,283	Job number is not available yet
+2020-04-16 12:13:26,285	File already exists: /var/loadtest/logs/2020-04-16_12-13-26.229374/answ_JuPs0b.log
+2020-04-16 12:13:26,285	File already exists: /var/loadtest/logs/2020-04-16_12-13-26.229374/phantom_0AZGDj.log
+2020-04-16 12:13:26,286	File not found to collect: validation_error.yaml
+2020-04-16 12:13:26,286	File already exists: /var/loadtest/logs/2020-04-16_12-13-26.229374/phout_f37CDl.log
+2020-04-16 12:13:26,286	File already exists: /var/loadtest/logs/2020-04-16_12-13-26.229374/phantom_stat_qOlW_V.log
+2020-04-16 12:14:38,609	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-16 12:14:43,870	Interrupting
+2020-04-16 12:14:53,748	Job number is not available yet
+2020-04-16 12:14:53,748	Job number is not available yet
+2020-04-16 12:14:53,749	File already exists: /var/loadtest/logs/2020-04-16_12-14-38.214098/monitoring_T4pd2j.xml
+2020-04-16 12:14:53,749	File already exists: /var/loadtest/logs/2020-04-16_12-14-38.214098/phantom_VMhlPA.conf
+2020-04-16 12:14:53,749	File already exists: /var/loadtest/logs/2020-04-16_12-14-38.214098/phantom_stat_TzeHWV.log
+2020-04-16 12:14:53,749	File already exists: /var/loadtest/logs/2020-04-16_12-14-38.214098/answ_rlrYcc.log
+2020-04-16 12:14:53,749	File not found to collect: validation_error.yaml
+2020-04-16 12:14:53,749	File already exists: /var/loadtest/logs/2020-04-16_12-14-38.214098/phout_dVlT3o.log
+2020-04-16 12:14:53,750	File already exists: /var/loadtest/logs/2020-04-16_12-14-38.214098/phantom_k6nIQ_.log
+2020-04-16 12:35:15,913	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-16 12:35:34,015	Interrupting
+2020-04-16 12:35:35,511	Job number is not available yet
+2020-04-16 12:35:35,511	Job number is not available yet
+2020-04-16 12:35:35,512	File already exists: /var/loadtest/logs/2020-04-16_12-35-15.476921/phantom_u65FEg.log
+2020-04-16 12:35:35,512	File already exists: /var/loadtest/logs/2020-04-16_12-35-15.476921/phantom_KOIxcx.conf
+2020-04-16 12:35:35,512	File already exists: /var/loadtest/logs/2020-04-16_12-35-15.476921/phantom_stat_5hU9Vs.log
+2020-04-16 12:35:35,512	File not found to collect: validation_error.yaml
+2020-04-16 12:35:35,512	File already exists: /var/loadtest/logs/2020-04-16_12-35-15.476921/answ_qPxmge.log
+2020-04-16 12:35:35,512	File already exists: /var/loadtest/logs/2020-04-16_12-35-15.476921/phout_awxVgL.log
+2020-04-16 12:35:35,513	File already exists: /var/loadtest/logs/2020-04-16_12-35-15.476921/monitoring_9bnhMX.xml
+2020-04-16 12:35:35,513	File already exists: /var/loadtest/logs/2020-04-16_12-35-15.476921/phantom_stdout_stderr_HeOHD_.log
+2020-04-16 17:27:54,298	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-16 17:29:04,485	Interrupting
+2020-04-16 17:29:06,422	Job number is not available yet
+2020-04-16 17:29:06,422	Job number is not available yet
+2020-04-16 17:29:06,423	File already exists: /var/loadtest/logs/2020-04-16_17-27-53.460387/phout_lORHw5.log
+2020-04-16 17:29:06,424	File already exists: /var/loadtest/logs/2020-04-16_17-27-53.460387/phantom_stat_xZ0DeB.log
+2020-04-16 17:29:06,424	File already exists: /var/loadtest/logs/2020-04-16_17-27-53.460387/phantom_Vm_zKm.conf
+2020-04-16 17:29:06,424	File already exists: /var/loadtest/logs/2020-04-16_17-27-53.460387/monitoring_K1u0jh.xml
+2020-04-16 17:29:06,424	File already exists: /var/loadtest/logs/2020-04-16_17-27-53.460387/phantom_RHmGHq.log
+2020-04-16 17:29:06,424	File not found to collect: validation_error.yaml
+2020-04-16 17:29:06,424	File already exists: /var/loadtest/logs/2020-04-16_17-27-53.460387/phantom_stdout_stderr_rqjRXi.log
+2020-04-16 17:29:06,424	File already exists: /var/loadtest/logs/2020-04-16_17-27-53.460387/answ_6t1EPY.log
+2020-04-16 18:52:18,592	Failed to install monitoring agent to 84.201.150.123
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/client.py", line 209, in install
+    out, errors, err_code = self.ssh.execute(cmd)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 72, in execute
+    with self.connect() as client:
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 42, in connect
+    timeout=self.timeout, )
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 437, in connect
+    passphrase,
+  File "/usr/local/lib/python2.7/dist-packages/paramiko/client.py", line 750, in _auth
+    raise SSHException("No authentication methods available")
+SSHException: No authentication methods available
+2020-04-16 18:57:28,959	Interrupting
+2020-04-16 18:57:31,214	Job number is not available yet
+2020-04-16 18:57:31,214	Job number is not available yet
+2020-04-16 18:57:31,215	File already exists: /var/loadtest/logs/2020-04-16_18-52-17.177538/phantom_stdout_stderr_x_4Vjn.log
+2020-04-16 18:57:31,215	File already exists: /var/loadtest/logs/2020-04-16_18-52-17.177538/phantom_stat_J1hmA8.log
+2020-04-16 18:57:31,215	File already exists: /var/loadtest/logs/2020-04-16_18-52-17.177538/phantom_1Vf1tF.log
+2020-04-16 18:57:31,216	File not found to collect: validation_error.yaml
+2020-04-16 18:57:31,216	File already exists: /var/loadtest/logs/2020-04-16_18-52-17.177538/phout_QvMyZR.log
+2020-04-16 18:57:31,216	File already exists: /var/loadtest/logs/2020-04-16_18-52-17.177538/monitoring_zPa3eM.xml
+2020-04-16 18:57:31,216	File already exists: /var/loadtest/logs/2020-04-16_18-52-17.177538/answ_SV9udp.log
+2020-04-16 18:57:31,216	File already exists: /var/loadtest/logs/2020-04-16_18-52-17.177538/phantom_drgQ3C.conf
