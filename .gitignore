@@ -1,1 +1,3 @@
 sentry.env
+**/static
+tank/logs

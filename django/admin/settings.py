@@ -27,7 +27,7 @@ SECRET_KEY = 'bs4!-k0!5pta3h$rmpc*y%2yrp787eap5+3@q2av1sl*scdi6g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['84.201.150.123']
 
 
 # Application definition
